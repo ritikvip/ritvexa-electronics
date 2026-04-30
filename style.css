@@ -176,3 +176,26 @@
       width: 100%;
     }
   }
+  .out-card {
+    opacity: 0.55;
+  }
+  
+  .out-stock {
+    background: red;
+    color: white;
+    padding: 9px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .out-stock {
+    background: #ff0000;   /* full red */
+    color: #ffffff;        /* white text */
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
