@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ritik Electronics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>⚡ Ritik Electronics</h2>
+  <input type="text" id="search" placeholder="Search product..." onkeyup="searchProducts()">
+  <button onclick="openCart()">🛒 Cart <span id="cartCount">0</span></button>
+</header>
+
+<section class="hero">
+  <h1>Best Electronics Deals</h1>
+  <p>Mobile Accessories • Chargers • Earbuds • LED Lights</p>
+  <a href="https://wa.me/91YOURNUMBER" target="_blank">Order on WhatsApp</a>
+</section>
+
+<div class="categories">
+  <button onclick="filterProducts('all')">All</button>
+  <button onclick="filterProducts('charger')">Chargers</button>
+  <button onclick="filterProducts('earbuds')">Earbuds</button>
+  <button onclick="filterProducts('cover')">Covers</button>
+  <button onclick="filterProducts('light')">LED Lights</button>
+</div>
+
+<section id="products" class="products"></section>
+
+<div id="cartBox" class="cart-box">
+  <h2>Your Order</h2>
+  <div id="cartItems"></div>
+  <button onclick="sendCartWhatsApp()" class="whatsapp">Send Order on WhatsApp</button>
+  <button onclick="closeCart()" class="close">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
