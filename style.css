@@ -199,3 +199,15 @@
     font-size: 14px;
     letter-spacing: 1px;
   }
+  .visitor-floating {
+    position: fixed;
+    right: 12px;
+    bottom: 80px;
+    background: #111827;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 999;
+  }
