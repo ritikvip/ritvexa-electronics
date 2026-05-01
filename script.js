@@ -306,3 +306,18 @@ function sendCartWhatsApp() {
 }
 
 showProducts();
+async function updateVisitorCount() {
+  const visitKey = "ritvexa_visited_once";
+
+  if (!localStorage.getItem(visitKey)) {
+    await fetch("https://api.countapi.xyz/hit/ritvexa-electronics/visits");
+    localStorage.setItem(visitKey, "yes");
+  }
+
+  const res = await fetch("https://api.countapi.xyz/get/ritvexa-electronics/visits");
+  const data = await res.json();
+
+  document.getElementById("visitorCount").innerText = data.value;
+}
+
+updateVisitorCount();
