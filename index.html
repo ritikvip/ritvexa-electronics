@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ritvexa_electronics </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritvexa Electronics</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,28 +11,16 @@
 <header>
   <h2>⚡ Ritvexa_electronics</h2>
   <input type="text" id="search" placeholder="Search product..." onkeyup="searchProducts()">
-  <button onclick="openCart()">🛒 Cart <span id="cartCount">0</span></button>
+  <button onclick="openCart()" class="cart-btn">🛒 Cart <span id="cartCount">0</span></button>
 </header>
 
 <section class="hero">
   <h1>Best Electronics Deals</h1>
-  <p>Mobile Accessories • Chargers • Earbuds • LED Lights• MB • ON • GNC • NUTRABAY • C9 • BIGMUSCLES </p>
-  <a href="https://wa.me/91YOURNUMBER" target="_blank">Order on WhatsApp</a>
+  <p>Mobile Accessories • Chargers • Earbuds • LED Lights • Supplements • Gym Accessories</p>
+  <a href="https://wa.me/916280083845" target="_blank">Order on WhatsApp</a>
 </section>
 
-<div class="categories">
-  <button onclick="filterProducts('all')">All</button>
-  <button onclick="filterProducts('charger')">Chargers</button>
-  <button onclick="filterProducts('earbuds')">Earbuds</button>
-  <button onclick="filterProducts('cover')">Covers</button>
-  <button onclick="filterProducts('light')">LED Lights</button>
-  <button onclick="filterProducts('MB')">MB</button>
-  <button onclick="filterProducts('ON')">ON</button>
-  <button onclick="filterProducts('C9')">C9</button>
-  <button onclick="filterProducts('GNC')">GNC</button>
-  <button onclick="filterProducts('NUTRABAY')">NUTRABAY</button>
-  <button onclick="filterProducts('BIGMUSCLES')">BIGMUSCLES</button>
-</div>
+<div class="categories" id="categoryButtons"></div>
 
 <section id="products" class="products"></section>
 
@@ -41,9 +30,15 @@
   <button onclick="sendCartWhatsApp()" class="whatsapp">Send Order on WhatsApp</button>
   <button onclick="closeCart()" class="close">Close</button>
 </div>
-<div class="visitor-floating">
-  👁️ <span id="visitorCount">0</span>
-</div>
+
+<footer class="shop-footer">
+  <h2>SK Electronics</h2>
+  <p>📍 Shop Location:<br>Aman Bhalla College Road,<br>Vill. Kotli Mughlan,<br>Pathankot, Punjab</p>
+  <p>📞 Contact Number:<br><a href="tel:6280083845">6280083845</a></p>
+  <p><a href="https://instagram.com/Ritvexa" target="_blank">📸 Instagram: Ritvexa</a></p>
+</footer>
+
+<div class="visitor-floating">👁️ <span id="visitorCount">1</span></div>
 
 <script src="script.js"></script>
 </body>
